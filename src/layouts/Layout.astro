@@ -1,0 +1,99 @@
+---
+import '@fontsource/inter';
+import '../styles/global.css';
+import BackgroundGlow from '../components/BackgroundGlow.astro';
+import ScrollToTop from '../components/ScrollToTop.astro';
+
+const { 
+  title, 
+  description = "Senior Software Engineer specializing in distributed systems.",
+  lang = "en"
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang={lang} class="scroll-smooth scroll-pt-[68px] md:scroll-pt-24">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:image" content="/og-image.png" />
+    
+		<title>{title}</title>
+    
+    <!-- Persistence initialization -->
+    <script is:inline>
+      // 1. Language Persistence
+      const savedLang = typeof localStorage !== 'undefined' ? localStorage.getItem('lang') : null;
+      const currentPath = window.location.pathname;
+      
+      // Auto-redirect ONLY if hitting the root path and a different language is preferred
+      // This prevents redirect loops if the user explicitly navigates to a specific language URL
+      if (savedLang && savedLang !== 'en' && (currentPath === '/' || currentPath === '')) {
+        window.location.replace('/' + savedLang);
+      }
+
+      // 2. Theme Persistence
+      const theme = (() => {
+        if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+          return localStorage.getItem('theme');
+        }
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          return 'dark';
+        }
+        return 'light';
+      })();
+    
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
+	</head>
+	<body class="antialiased bg-bg-dark text-text-main relative transition-colors duration-300">
+    <BackgroundGlow />
+		<slot />
+    <ScrollToTop />
+    <script>
+      // Intersection Observer for scroll animations
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-in');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+
+      document.querySelectorAll('.reveal-on-scroll').forEach((el) => {
+        observer.observe(el);
+      });
+    </script>
+	</body>
+</html>
+
+<style is:global>
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s cubic-bezier(0.5, 0, 0, 1), transform 0.6s cubic-bezier(0.5, 0, 0, 1);
+  }
+
+  .reveal-on-scroll.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>

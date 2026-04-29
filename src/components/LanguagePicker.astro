@@ -1,0 +1,33 @@
+---
+const { currentLang } = Astro.props;
+
+const langs = [
+  { code: 'en', flagUrl: 'https://flagcdn.com/us.svg', alt: 'English', path: '/' },
+  { code: 'es', flagUrl: 'https://flagcdn.com/es.svg', alt: 'Español', path: '/es' },
+  { code: 'pt', flagUrl: 'https://flagcdn.com/br.svg', alt: 'Português', path: '/pt' }
+];
+
+const currentLangData = langs.find(l => l.code === currentLang) || langs[0];
+---
+
+<div class="relative group z-50">
+  <button class="flex items-center gap-2 hover:opacity-80 transition-opacity p-2" aria-label="Select Language">
+    <img src={currentLangData.flagUrl} alt={currentLangData.alt} class="w-6 h-4 object-cover rounded-[2px] shadow-sm" />
+  </button>
+  <div class="absolute right-0 mt-1 w-16 bg-bg-light border border-black/10 dark:border-white/10 rounded shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 overflow-hidden">
+    {langs.map(l => (
+      <a 
+        href={l.path} 
+        class={`group/link flex items-center justify-center py-3 hover:bg-black/5 dark:hover:bg-white/5 transition-colors ${currentLang === l.code ? 'bg-black/5 dark:bg-white/10' : ''}`}
+        aria-label={`Switch to ${l.code}`}
+        onclick={`localStorage.setItem('lang', '${l.code}')`}
+      >
+        <img 
+          src={l.flagUrl} 
+          alt={l.alt} 
+          class={`w-6 h-4 object-cover rounded-[2px] shadow-sm transition-opacity ${currentLang === l.code ? 'opacity-100' : 'opacity-40 group-hover/link:opacity-100'}`} 
+        />
+      </a>
+    ))}
+  </div>
+</div>

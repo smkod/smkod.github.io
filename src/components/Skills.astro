@@ -1,0 +1,62 @@
+---
+import { Layout, Server, Database, Settings } from 'lucide-astro';
+
+const { dict } = Astro.props;
+
+const skillGroups = [
+  {
+    category: dict.categories.frontend,
+    icon: Layout,
+    skills: ["Angular 18", "TypeScript", "RxJS", "Signals", "Tailwind CSS", "Next.js"]
+  },
+  {
+    category: dict.categories.backend,
+    icon: Server,
+    skills: ["NestJS", "Node.js", "Go", "gRPC", "Kafka", "Microservices", "Concurrency"]
+  },
+  {
+    category: dict.categories.database,
+    icon: Database,
+    skills: ["PostgreSQL", "CassandraDB", "MySQL", "AWS (S3, EC2)", "Docker", "Nx"]
+  },
+  {
+    category: dict.categories.tools,
+    icon: Settings,
+    skills: ["CI/CD", "GitHub Actions", "SonarQube", "Jest", "Git", "Agile/Scrum"]
+  }
+];
+---
+
+<section id="about" class="py-24 px-6 max-w-4xl mx-auto reveal-on-scroll">
+  <div class="flex items-center gap-4 mb-12">
+    <h2 class="text-3xl font-bold text-text-main">{dict.title}</h2>
+    <div class="h-[1px] bg-bg-light flex-grow"></div>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-12 mb-16">
+    <div class="text-text-muted leading-relaxed space-y-4">
+      <p set:html={dict.p1} />
+      <p set:html={dict.p2} />
+      <p set:html={dict.p3} />
+      <p set:html={dict.p4} />
+    </div>
+    
+    <div class="space-y-8">
+      {skillGroups.map((group) => (
+        <div>
+          <h4 class="text-sm font-bold text-text-main uppercase tracking-widest mb-4 flex items-center gap-3">
+            <group.icon size={18} class="text-accent" />
+            {group.category}
+          </h4>
+          <div class="flex flex-wrap gap-2">
+            {group.skills.map((skill) => (
+              <span class="px-3 py-1 bg-bg-light border border-bg-light hover:border-accent/50 transition-all text-xs font-mono rounded text-text-muted hover:text-accent">
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

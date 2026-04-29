@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from './Navbar.astro';
+import Hero from './Hero.astro';
+import Skills from './Skills.astro';
+import Experience from './Experience.astro';
+import Projects from './Projects.astro';
+import Footer from './Footer.astro';
+
+const { dict, lang } = Astro.props;
+---
+
+<Layout title="Samuel Casco | Senior Software Engineer" lang={lang}>
+	<Navbar dict={dict.nav} currentLang={lang} />
+	<main class="max-w-6xl mx-auto">
+		<Hero dict={dict.hero} />
+		<Skills dict={dict.skills} />
+		<Experience dict={dict.experience} />
+		<Projects dict={dict.projects} />
+	</main>
+	<Footer dict={dict.footer} />
+</Layout>
