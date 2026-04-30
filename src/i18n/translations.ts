@@ -14,7 +14,7 @@ export const translations = {
       description: "Software Engineer with 4+ years of experience navigating complex environments. I build high-concurrency <span class=\"text-text-main font-semibold\">microservices (Node/Go)</span> and orchestrate robust, secure <span class=\"text-text-main font-semibold\">front-end architectures (Angular/Next.js)</span> for sectors where scalability and security are non-negotiable.",
       cta: "Check out my work!",
       resume: "Download Resume",
-      resumeLink: "/resumes/Samuel-Casco-Resume-EN.pdf"
+      resumeLink: "/resumes/Samuel Casco - Resume EN.pdf"
     },
     skills: {
       title: "About & Skills",
@@ -80,7 +80,7 @@ export const translations = {
               description: [
                 "Architected event-driven microservices using NestJS and Kafka to handle massive mobile plan provisioning and thousands of concurrent events.",
                 "Implemented CassandraDB and PostgreSQL to resolve read/write bottlenecks in high-volume asynchronous data flows.",
-                "Spearheaded the complete rebuild of an enterprise legacy B2B system using Angular and Bootstrap, improving UI/UX and maintainability."
+                "Collaborated on the rebuild of an enterprise legacy B2B system using Angular and Bootstrap, improving UI/UX and maintainability."
               ]
             }
           ],
@@ -148,7 +148,7 @@ export const translations = {
       description: "Ingeniero de Software con más de 4 años de experiencia navegando entornos complejos. Construyo <span class=\"text-text-main font-semibold\">microservicios de alta concurrencia (Node/Go)</span> y orquesto <span class=\"text-text-main font-semibold\">arquitecturas frontend robustas (Angular/Next.js)</span> para sectores donde la escalabilidad y la seguridad son innegociables.",
       cta: "¡Mira mi trabajo!",
       resume: "Descargar CV",
-      resumeLink: "/resumes/Samuel-Casco-Resume-ES.pdf"
+      resumeLink: "/resumes/Samuel Casco - Resume ES.pdf"
     },
     skills: {
       title: "Sobre Mí y Habilidades",
@@ -214,7 +214,7 @@ export const translations = {
               description: [
                 "Diseñando microservicios orientados a eventos con NestJS y Kafka para el aprovisionamiento masivo de planes móviles y miles de eventos concurrentes.",
                 "Implementando CassandraDB y PostgreSQL para resolver cuellos de botella de lectura/escritura en flujos de datos asíncronos de alto volumen.",
-                "Liderando la reconstrucción completa de un sistema B2B empresarial usando Angular y Bootstrap, mejorando drásticamente la UI/UX y mantenibilidad."
+                "Colaborando en la reconstrucción de un sistema B2B empresarial usando Angular y Bootstrap, mejorando drásticamente la UI/UX y mantenibilidad."
               ]
             }
           ],
@@ -282,7 +282,7 @@ export const translations = {
       description: "Engenheiro de Software com mais de 4 anos de experiência navegando em ambientes complexos. Construo <span class=\"text-text-main font-semibold\">microsserviços de alta concorrência (Node/Go)</span> e orquestro <span class=\"text-text-main font-semibold\">arquiteturas front-end robustas (Angular/Next.js)</span> para setores onde escalabilidade e segurança são inegociáveis.",
       cta: "Veja meu trabalho!",
       resume: "Baixar Currículo",
-      resumeLink: "/resumes/Samuel-Casco-Resume-PT.pdf"
+      resumeLink: "/resumes/Samuel Casco - Resume PT.pdf"
     },
     skills: {
       title: "Sobre Mim & Habilidades",
@@ -348,7 +348,7 @@ export const translations = {
               description: [
                 "Projetando microsserviços orientados a eventos com NestJS e Kafka para o provisionamento massivo de planos móveis e milhares de eventos simultâneos.",
                 "Implementando CassandraDB e PostgreSQL para resolver gargalos de leitura/gravação em fluxos de dados assíncronos de alto volume.",
-                "Liderando a reconstrução completa de um sistema B2B empresarial usando Angular e Bootstrap, melhorando drasticamente a UI/UX e manutenibilidade."
+                "Colaborando na reconstrução de um sistema B2B empresarial usando Angular e Bootstrap, melhorando drasticamente a UI/UX e manutenibilidade."
               ]
             }
           ],
