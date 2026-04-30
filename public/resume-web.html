@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Casco - Resume (Full-Stack)</title>
+    <style>
+        :root {
+            --primary: #1a2a3a;
+            --accent: #34495e;
+            --text: #2c3e50;
+            --light-text: #546e7a;
+            --border: #dee2e6;
+        }
+        
+        
+        .hl { font-weight: 500; color: var(--primary); }
+        body {
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.35;
+            color: var(--text);
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 0.3in 0.55in;
+            -webkit-font-smoothing: antialiased;
+        }
+        h1 { margin: 0; text-transform: uppercase; font-size: 26px; text-align: center; color: var(--primary); letter-spacing: 0.5px; }
+        .subtitle { text-align: center; font-weight: 600; font-size: 14.5px; color: var(--accent); margin-top: 1px; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.3px; }
+        
+        .contact { text-align: center; font-size: 11.5px; margin-bottom: 10px; border-bottom: 1.5px solid var(--primary); padding-bottom: 6px; color: var(--light-text); }
+        .contact span { padding: 0 4px; }
+        .contact a { color: var(--text); text-decoration: none; font-weight: 500; }
+        
+        h2 { border-bottom: 1px solid var(--border); text-transform: uppercase; font-size: 13px; margin-top: 14px; margin-bottom: 6px; color: var(--primary); letter-spacing: 1.2px; font-weight: 700; }
+        
+        .job-header { margin: 12px 0 3px; }
+        h3 { font-size: 13.5px; margin: 0; display: inline-block; color: var(--primary); font-weight: 700; }
+        .job-date { font-weight: 500; font-style: italic; font-size: 11px; color: var(--light-text); float: right; }
+        .clear { clear: both; }
+        
+        .summary { font-size: 12.5px; margin-bottom: 10px; text-align: justify; line-height: 1.4; color: var(--text); }
+        ul { margin: 2px 0 8px 18px; padding: 0; }
+        li { font-size: 12.2px; margin-bottom: 6px; }
+        li strong { color: var(--primary); font-weight: 600; }
+        
+        .skills-section { font-size: 12.2px; margin-top: 6px; }
+        .skills-section p { margin: 4px 0; line-height: 1.35; }
+        .skills-section strong { color: var(--primary); }
+        
+        .edu-item { margin-top: 10px; font-size: 12.5px; }
+        .edu-item strong { font-size: 13px; color: var(--primary); }
+        
+        @media print {
+            
+        
+        .hl { font-weight: 500; color: var(--primary); }
+        body { padding: 0.3in 0.5in; }
+            @page { size: letter; margin: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Samuel Casco</h1>
+    <p class="subtitle">Senior Full-Stack Software Engineer | Angular, Node.JS & TypeScript Specialist</p>
+    <div class="contact">
+        <span><strong>Location:</strong> Tegucigalpa, Honduras</span> | 
+        <span><strong>Email:</strong> <a href="mailto:sacasco99@gmail.com">sacasco99@gmail.com</a></span><br>
+        <span><a href="https://linkedin.com/in/samuelcasco">linkedin.com/in/samuelcasco</a></span> | 
+        <span><a href="https://github.com/smkod">github.com/smkod</a></span>
+    </div>
+
+    <p class="summary">
+        Strategic <strong>Senior Full-Stack Engineer</strong> with over 4 years of experience delivering high-scale, end-to-end web applications. Expert in the <span class="hl">TypeScript</span> ecosystem, bridging modern front-end architectures (<span class="hl">Angular 18</span>) with robust back-end systems (<span class="hl">NestJS</span>, <span class="hl">Node.js</span>). Proven leader in architectural modernization, <span class="hl">CI/CD</span> excellence, and high-performance system design.
+    </p>
+
+    <h2>Experience</h2>
+
+    <div class="job-header">
+        <h3>Front-End Team Lead (Senior Software Engineer) | Banco Cuscatlán</h3>
+        <span class="job-date">Aug 2024 - Present</span>
+        <div class="clear"></div>
+    </div>
+    <ul>
+        <li>Lead Developer for both the bank's regional web application (directing 4 engineers) and the "Matrix" core platform (leading 1 developer).</li>
+        <li>Architected the "Matrix" core platform alongside another developer, modernizing the regional digital infrastructure and configuration engine.</li>
+        <li>Orchestrated the migration of core systems to <span class="hl">Angular 18</span>, implementing <span class="hl">Signals</span> and <span class="hl">Deferrable Views</span> to improve rendering performance and user experience.</li>
+        <li>Established rigorous quality standards by configuring <span class="hl">Husky</span> and <span class="hl">SonarQube</span> for strict <span class="hl">Pull Request</span> validation and enforcing 70%+ test coverage via <span class="hl">SOLID</span> principles.</li>
+    </ul>
+
+    <div class="job-header">
+        <h3>Full-Stack Software Engineer | TIGO Honduras (via Baas Technologies)</h3>
+        <span class="job-date">Aug 2022 - Aug 2024</span>
+        <div class="clear"></div>
+    </div>
+    <ul>
+        <li>Collaborated on the end-to-end rebuild of enterprise-scale systems using <span class="hl">Angular</span> and <span class="hl">NestJS</span>, contributing to significant improvements in usability and long-term maintainability.</li>
+        <li>Designed high-volume data processing microservices for file orchestration, handling large-scale asynchronous data flows across distributed systems.</li>
+        <li>Fostered a strong testing culture by leading the adoption of unit testing and continuous integration (<span class="hl">CI/CD</span>) using ESLint and Prettier.</li>
+    </ul>
+
+    <h2>Featured Projects</h2>
+
+    <div class="job-header">
+        <h3>Cloud-Native Language Learning Platform | Lead Architect & Developer</h3>
+        <span class="job-date">Jan 2026 - Present</span>
+        <div class="clear"></div>
+    </div>
+    <ul>
+        <li>Architect a hybrid distributed system using <span class="hl">Go</span> microservices communicating via <span class="hl">gRPC</span> and <span class="hl">Next.js</span> for the client-side experience.</li>
+        <li>Design a scalable <strong>Next.js</strong> ecosystem within an <span class="hl">Nx Monorepo</span> to share UI libraries and micro-frontend components across a distributed architecture.</li>
+        <li>Integrated Google Gemini AI APIs with <span class="hl">gRPC</span> for high-speed dynamic resource generation and real-time content analysis.</li>
+        <li>Deploy app to AWS along with the corresponding app dependecies <span class="hl">(EC2, S3, RDS, Lambda)</span></li>
+    </ul>
+
+    <h2>Skills</h2>
+    <div class="skills-section">
+        <p><strong>Frontend:</strong> <span class="hl">Angular 18</span>, <span class="hl">TypeScript</span>, <span class="hl">RxJS</span>, <span class="hl">Signals</span>, <span class="hl">Tailwind CSS</span>, <span class="hl">Bootstrap</span>, HTML5/CSS3, SCSS.</p>
+        <p><strong>Backend & DB:</strong> <span class="hl">NestJS</span>, <span class="hl">Node.js</span>, <span class="hl">Microservices</span>, <span class="hl">RESTful APIs</span>, <span class="hl">gRPC</span>, <span class="hl">PostgreSQL</span>, <span class="hl">CassandraDB</span>, SQL, <span class="hl">Go</span>.</p>
+        <p><strong>DevOps & Testing:</strong> <span class="hl">AWS</span> (<span class="hl">ECS</span>, <span class="hl">S3</span>, <span class="hl">ECR</span>), <span class="hl">Docker</span>, <span class="hl">Nx Monorepo</span>, <span class="hl">GitHub Actions</span>, <span class="hl">Husky</span>, <span class="hl">SonarQube</span>, <span class="hl">Jest</span>, <span class="hl">Vitest</span>.</p>
+        <p><strong>Soft Skills:</strong> <span class="hl">Technical Leadership</span>, <span class="hl">System Design</span>, <span class="hl">Agile/Scrum</span>, Product Engineering, <span class="hl">Mentoring</span>, Project Management.</p>
+    </div>
+
+    <h2>Education</h2>
+    <div class="edu-item">
+        <strong>Universidad Nacional Autónoma de Honduras (UNAH)</strong> <br>
+        Bachelor of Science in Computer Science | Jan 2018 - Dec 2022
+    </div>
+
+    <h2>Languages</h2>
+    <p style="font-size: 12.2px; margin: 6px 0 0 0;"><strong>Spanish</strong> (Native) | <strong>English</strong> (C1 - Advanced) | <strong>Portuguese</strong> (B2 - Upper Intermediate)</p>
+
+</body>
+</html>

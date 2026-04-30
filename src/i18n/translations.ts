@@ -11,16 +11,17 @@ export const translations = {
       greeting: "Hi, my name is",
       name: "Samuel Casco.",
       subtitle: "I engineer scalable distributed systems.",
-      description: "Senior Software Engineer with 4+ years of experience specializing in <span class=\"text-text-main font-semibold\">TypeScript, Go, and Cloud Architectures</span>. I lead engineering teams, design high-concurrency microservices, and build robust digital infrastructures from the database to the UI.",
+      description: "Software Engineer with 4+ years of experience navigating complex environments. I build high-concurrency <span class=\"text-text-main font-semibold\">microservices (Node/Go)</span> and orchestrate robust, secure <span class=\"text-text-main font-semibold\">front-end architectures (Angular/Next.js)</span> for sectors where scalability and security are non-negotiable.",
       cta: "Check out my work!",
-      resume: "Download Resume"
+      resume: "Download Resume",
+      resumeLink: "/resumes/Samuel-Casco-Resume-EN.pdf"
     },
     skills: {
       title: "About & Skills",
-      p1: "I'm a strategic <span class=\"text-accent font-semibold\">Senior Software Engineer</span> with over 4 years of experience delivering high-scale, end-to-end web applications and distributed systems.",
-      p2: "I bridge modern front-end architectures like <span class=\"text-text-main\">Angular and Next.js</span> with robust distributed back-end systems using <span class=\"text-text-main\">NestJS, Go, and Kafka</span>. I have a deep passion for architectural modernization, Platform Engineering, and CI/CD excellence.",
-      p3: "Beyond writing code, my strength lies in <strong>technical leadership and scalable architecture</strong>. I am deeply passionate about teaching others and continuously learning from my peers. I excel at taking ownership of complex problems, mentoring developers, and negotiating technical debt to ensure sustainable delivery.",
-      p4: "Currently, I lead engineering teams at <span class=\"text-accent font-semibold\">Banco Cuscatlán</span>, architecting the next generation of regional digital banking infrastructure. Previously, I engineered massive event-driven provisioning microservices at TIGO.",
+      p1: "I'm a strategic <span class=\"text-accent font-semibold\">Software Engineer</span> with over 4 years of experience delivering high-scale, end-to-end web applications and distributed systems in the FinTech and Telecom sectors.",
+      p2: "I bridge the gap between complex business logic and robust technical execution. My focus is on <strong>software fundamentals</strong> over framework hype, ensuring systems are resilient, maintainable, and efficient through clean architecture and automated quality standards.",
+      p3: "Beyond writing code, my strength lies in <strong>technical leadership and architectural evolution</strong>. I excel at taking ownership of complex migrations, mentoring teams through documentation and pair programming, and building systems that make other developers' work easier.",
+      p4: "Currently, as an <span class=\"text-accent font-semibold\">Independent Software Consultant</span>, I focus on distributed systems, Go, and AWS. Previously, I led engineering teams at Banco Cuscatlán and built massive event-driven microservices at TIGO.",
       categories: {
         frontend: "Frontend",
         backend: "Backend",
@@ -32,25 +33,39 @@ export const translations = {
       title: "Where I've Worked",
       jobs: [
         {
+          company: "Independent Consultant",
+          roles: [
+            {
+              title: "Software Engineering Consultant",
+              date: "Jan 2026 - Present",
+              description: [
+                "Driving technical initiatives focused on high-performance architectures and cloud-native solutions using Go and AWS.",
+                "Architecting specialized microservices and designing gRPC contracts for low-latency communication.",
+                "Implementing modern web delivery with Next.js and orchestrating complex monorepo workflows using Nx."
+              ]
+            }
+          ],
+          tech: ["Go (Golang)", "gRPC", "AWS", "Next.js", "Nx", "LLMs", "PostgreSQL"]
+        },
+        {
           company: "Banco Cuscatlán",
           roles: [
             {
-              title: "Front-End Team Lead",
+              title: "Senior Front-End Lead",
               date: "May 2025 - Jan 2026",
               description: [
-                "Directing a team of 4 engineers for the local web application and 1 developer for the 'Matrix' core platform.",
-                "Capacitating and mentoring developers, QA analysts, and interns on unit testing, Git, and automation workflows.",
-                "Overseeing architectural decisions, code reviews, and cross-team knowledge sharing with the El Salvador division."
+                "Directed a cross-functional team of 4 engineers, providing technical leadership and mentoring to over 10 staff members in GitFlow and unit testing.",
+                "Orchestrated the core platform migration from Angular 16 to 18, implementing Signals and Deferrable Views to maximize performance.",
+                "Established strict CI/CD quality standards by configuring Husky and SonarQube for automated Pull Request validation."
               ]
             },
             {
-              title: "Senior Software Engineer",
-              date: "Aug 2024 - April 2025",
+              title: "Senior Front-End Developer",
+              date: "Aug 2024 - May 2025",
               description: [
-                "Architected the 'Matrix' core platform, modernizing regional digital infrastructure from scratch.",
-                "Orchestrated the migration to Angular 18, implementing Signals and Deferrable Views to maximize rendering performance.",
-                "Established CI/CD quality standards using Husky and SonarQube, enforcing strict PR validation and 70%+ test coverage.",
-                "Built critical UI modules: start widgets, service payments, credit cards, and complex account recovery flows."
+                "Architected the 'Matrix' regional digital infrastructure modernization, moving legacy systems to a high-performance Angular architecture.",
+                "Engineered high-complexity banking modules for credit card flows, service payments, and secure account recovery.",
+                "Reduced technical debt via SOLID principles and established framework-agnostic architectural patterns."
               ]
             }
           ],
@@ -60,72 +75,53 @@ export const translations = {
           company: "TIGO Honduras",
           roles: [
             {
-              title: "Backend & Microservices Developer",
-              date: "Jan 2023 - Aug 2024",
+              title: "Full-Stack Software Engineer",
+              date: "Aug 2022 - Aug 2024",
               description: [
-                "Designed and developed highly concurrent microservices using NestJS and Kafka for massive mobile plan provisioning.",
-                "Implemented CassandraDB to support immense read/write volumes without bottlenecks, paired with PostgreSQL.",
-                "Introduced proactive code inspection via SonarQube and established a robust unit testing culture with Jest.",
-                "Containerized microservices using Docker and orchestrated deployments across secure internal networks."
-              ]
-            },
-            {
-              title: "Full-Stack Software Engineer (Outsourcing)",
-              date: "Mar 2022 - Jan 2023",
-              description: [
-                "Rebuilt and modernized a complete legacy system using Angular and Bootstrap, drastically improving UI/UX.",
-                "Developed and maintained enterprise data flows using Java and Oracle DB (queues and agents)."
+                "Architected event-driven microservices using NestJS and Kafka to handle massive mobile plan provisioning and thousands of concurrent events.",
+                "Implemented CassandraDB and PostgreSQL to resolve read/write bottlenecks in high-volume asynchronous data flows.",
+                "Spearheaded the complete rebuild of an enterprise legacy B2B system using Angular and Bootstrap, improving UI/UX and maintainability."
               ]
             }
           ],
-          tech: ["NestJS", "Angular", "Kafka", "CassandraDB", "Docker", "Java", "Oracle"]
+          tech: ["NestJS", "Kafka", "CassandraDB", "Docker", "Angular", "PostgreSQL"]
         }
       ]
     },
     projects: {
-      title: "Projects I've worked on",
+      title: "Selected Projects & Key Work",
       badgeCareer: "career",
       badgePersonal: "personal",
       badgeProject: "Project",
       items: [
         {
-          title: "Local Digital Banking Web App",
-          description: "Led the front-end development of the local web application for Banco Cuscatlán. Built critical modules including service payments, credit card management, user registration, and complex account recovery flows.",
-          tech: ["Angular 18", "TypeScript", "Tailwind CSS", "RxJS", "Jest"],
-          type: "career"
-        },
-        {
           title: "Cloud-Native Learning Platform",
-          description: "Hybrid distributed system with Go microservices communicating via gRPC. Features AI-powered dynamic resource generation using Google Gemini and scalable storage on AWS S3.",
-          tech: ["Go", "gRPC", "Next.js", "AWS", "Nx", "LLM / RAG", "Vitest"],
+          description: "Hybrid distributed system with specialized Go microservices communicating via gRPC. Features AI-powered resource generation using LLMs and modern monorepo orchestration with Nx.",
+          tech: ["Go", "gRPC", "Next.js", "AWS", "Nx", "LLMs", "Vitest"],
           type: "personal"
         },
         {
-          title: "Matrix Core Platform",
-          description: "Architected the regional digital infrastructure and configuration engine for Banco Cuscatlán. Modernized legacy systems using Angular 18 and a high-performance rendering strategy.",
-          tech: ["Angular 18", "Signals", "Nx", "TypeScript", "SCSS"],
-          github: "https://github.com/smkod",
+          title: "Massive Provisioning Microservices",
+          description: "High-concurrency event-driven architecture using NestJS and Kafka. Processed massive mobile plan provisioning with CassandraDB for ultra-low latency data operations at TIGO.",
+          tech: ["NestJS", "Kafka", "CassandraDB", "Docker", "PostgreSQL"],
           type: "career"
         },
         {
-          title: "Massive Provisioning Microservices",
-          description: "High-concurrency event-driven architecture using NestJS and Kafka. Processed massive mobile plan provisioning with CassandraDB for ultra-low latency data operations.",
-          tech: ["NestJS", "Kafka", "Microservices", "CassandraDB", "Docker", "PostgreSQL"],
-          github: "https://github.com/smkod",
+          title: "Matrix Core Platform",
+          description: "Architected the regional digital infrastructure and configuration engine for Banco Cuscatlán. Modernized legacy systems using Angular 18, Signals, and a high-performance rendering strategy.",
+          tech: ["Angular 18", "Signals", "Nx", "TypeScript", "Tailwind"],
+          type: "career"
+        },
+        {
+          title: "Local Digital Banking Web App",
+          description: "Led the front-end development for Banco Cuscatlán's core web application. Built critical secure modules for payments, credit cards, and registration using modern Angular standards.",
+          tech: ["Angular 18", "RxJS", "Tailwind CSS", "Jest"],
           type: "career"
         },
         {
           title: "Enterprise File Orchestrator",
-          description: "Distributed file orchestration service for TIGO Honduras. Handles complex asynchronous data flows and massive file processing across containerized environments.",
+          description: "Distributed file orchestration service for TIGO. Handles complex asynchronous data flows and massive file processing across containerized environments.",
           tech: ["Node.js", "Microservices", "Docker", "Jest"],
-          github: "https://github.com/smkod",
-          type: "career"
-        },
-        {
-          title: "UNOCELL Management System",
-          description: "Full-stack inventory and repair tracking system. Features role-based access control and integrated basic accounting for small-to-medium retail businesses.",
-          tech: ["Node.js", "MySQL", "Bootstrap", "Hostinger"],
-          github: "https://github.com/smkod",
           type: "career"
         }
       ]
@@ -149,16 +145,17 @@ export const translations = {
       greeting: "Hola, mi nombre es",
       name: "Samuel Casco.",
       subtitle: "Diseño sistemas distribuidos escalables.",
-      description: "Ingeniero de Software Senior con más de 4 años de experiencia especializado en <span class=\"text-text-main font-semibold\">TypeScript, Go y Arquitecturas Cloud</span>. Lidero equipos de ingeniería, diseño microservicios de alta concurrencia y construyo infraestructuras digitales robustas desde la base de datos hasta la UI.",
+      description: "Ingeniero de Software con más de 4 años de experiencia navegando entornos complejos. Construyo <span class=\"text-text-main font-semibold\">microservicios de alta concurrencia (Node/Go)</span> y orquesto <span class=\"text-text-main font-semibold\">arquitecturas frontend robustas (Angular/Next.js)</span> para sectores donde la escalabilidad y la seguridad son innegociables.",
       cta: "¡Mira mi trabajo!",
-      resume: "Descargar CV"
+      resume: "Descargar CV",
+      resumeLink: "/resumes/Samuel-Casco-Resume-ES.pdf"
     },
     skills: {
       title: "Sobre Mí y Habilidades",
-      p1: "Soy un <span class=\"text-accent font-semibold\">Ingeniero de Software Senior</span> estratégico con más de 4 años de experiencia entregando aplicaciones web y sistemas distribuidos a gran escala de extremo a extremo.",
-      p2: "Conecto arquitecturas front-end modernas como <span class=\"text-text-main\">Angular y Next.js</span> con sistemas back-end distribuidos robustos usando <span class=\"text-text-main\">NestJS, Go y Kafka</span>. Me apasiona la modernización arquitectónica, el Platform Engineering y la excelencia en CI/CD.",
-      p3: "Más allá de escribir código, mi fortaleza radica en <strong>el liderazgo técnico y la arquitectura escalable</strong>. Me apasiona profundamente enseñar a otros y aprender continuamente de mis compañeros. Destaco por asumir la propiedad de problemas complejos, guiar a otros desarrolladores y negociar deuda técnica para asegurar entregas sostenibles.",
-      p4: "Actualmente, lidero equipos de ingeniería en <span class=\"text-accent font-semibold\">Banco Cuscatlán</span>, diseñando la próxima generación de la infraestructura de banca digital regional. Anteriormente, desarrollé microservicios masivos de aprovisionamiento impulsados por eventos en TIGO.",
+      p1: "Soy un <span class=\"text-accent font-semibold\">Ingeniero de Software</span> estratégico con más de 4 años de experiencia entregando aplicaciones web y sistemas distribuidos a gran escala en los sectores FinTech y Telecom.",
+      p2: "Conecto la lógica de negocio compleja con una ejecución técnica robusta. Mi enfoque son los <strong>fundamentos del software</strong> por encima de los frameworks de moda, asegurando sistemas resilientes, mantenibles y eficientes mediante arquitectura limpia y estándares de calidad automatizados.",
+      p3: "Más allá del código, mi fortaleza radica en el <strong>liderazgo técnico y la evolución arquitectónica</strong>. Destaco por asumir la propiedad de migraciones complejas, guiar equipos mediante documentación y pair programming, y construir sistemas que facilitan el trabajo de otros desarrolladores.",
+      p4: "Actualmente, como <span class=\"text-accent font-semibold\">Consultor Independiente de Software</span>, me enfoco en sistemas distribuidos, Go y AWS. Anteriormente, lideré equipos en Banco Cuscatlán y construí microservicios masivos en TIGO.",
       categories: {
         frontend: "Frontend",
         backend: "Backend",
@@ -170,25 +167,39 @@ export const translations = {
       title: "Dónde he trabajado",
       jobs: [
         {
+          company: "Consultor Independiente",
+          roles: [
+            {
+              title: "Consultor de Ingeniería de Software",
+              date: "Ene 2026 - Actualidad",
+              description: [
+                "Impulsando iniciativas técnicas enfocadas en arquitecturas de alto rendimiento y soluciones cloud-native usando Go y AWS.",
+                "Diseñando microservicios especializados y contratos gRPC para comunicaciones de baja latencia.",
+                "Implementando entregas web modernas con Next.js y orquestando flujos de monorepo complejos con Nx."
+              ]
+            }
+          ],
+          tech: ["Go (Golang)", "gRPC", "AWS", "Next.js", "Nx", "LLMs", "PostgreSQL"]
+        },
+        {
           company: "Banco Cuscatlán",
           roles: [
             {
-              title: "Front-End Team Lead",
+              title: "Senior Front-End Lead",
               date: "Mayo 2025 - Ene 2026",
               description: [
-                "Dirigiendo un equipo de 4 ingenieros para la aplicación web local y 1 desarrollador para la plataforma core 'Matrix'.",
-                "Capacitando y siendo mentor de desarrolladores, analistas QA y pasantes en pruebas unitarias, Git y flujos de automatización.",
-                "Supervisando decisiones arquitectónicas, revisión de código e intercambio de conocimientos con la división de El Salvador."
+                "Dirigiendo un equipo de 4 ingenieros, brindando liderazgo técnico y mentoría a más de 10 colaboradores en GitFlow y pruebas unitarias.",
+                "Orquestando la migración de la plataforma core de Angular 16 a 18, implementando Signals y Deferrable Views para maximizar el rendimiento.",
+                "Estableciendo estándares de calidad CI/CD mediante la configuración de Husky y SonarQube para la validación automatizada de Pull Requests."
               ]
             },
             {
-              title: "Senior Software Engineer",
-              date: "Ago 2024 - Abril 2025",
+              title: "Senior Front-End Developer",
+              date: "Ago 2024 - Mayo 2025",
               description: [
-                "Diseñé la arquitectura de la plataforma core 'Matrix', modernizando la infraestructura digital regional desde cero.",
-                "Orquesté la migración a Angular 18, implementando Signals y Deferrable Views para maximizar el rendimiento.",
-                "Establecí estándares de calidad CI/CD utilizando Husky y SonarQube, aplicando validación estricta de PRs y 70%+ de cobertura de pruebas.",
-                "Construí módulos críticos de interfaz de usuario: widgets de inicio, pago de servicios, tarjetas de crédito y flujos complejos de recuperación de cuentas."
+                "Diseñando la modernización de la infraestructura digital regional 'Matrix', moviendo sistemas legacy a una arquitectura Angular de alto rendimiento.",
+                "Construyendo módulos bancarios de alta complejidad para flujos de tarjetas de crédito, pago de servicios y recuperación segura de cuentas.",
+                "Reduciendo la deuda técnica vía principios SOLID y estableciendo patrones arquitectónicos independientes del framework."
               ]
             }
           ],
@@ -198,72 +209,53 @@ export const translations = {
           company: "TIGO Honduras",
           roles: [
             {
-              title: "Desarrollador Backend & Microservicios",
-              date: "Ene 2023 - Ago 2024",
+              title: "Ingeniero de Software Full-Stack",
+              date: "Ago 2022 - Ago 2024",
               description: [
-                "Diseñé y desarrollé microservicios altamente concurrentes usando NestJS y Kafka para el aprovisionamiento masivo de planes móviles.",
-                "Implementé CassandraDB para soportar inmensos volúmenes de lectura/escritura sin cuellos de botella, en conjunto con PostgreSQL.",
-                "Introduje la inspección proactiva de código vía SonarQube y establecí una sólida cultura de pruebas unitarias con Jest.",
-                "Containericé microservicios usando Docker y orquesté despliegues a través de redes internas seguras."
-              ]
-            },
-            {
-              title: "Ingeniero de Software Full-Stack (Outsourcing)",
-              date: "Mar 2022 - Ene 2023",
-              description: [
-                "Reconstruí y modernicé un sistema heredado completo utilizando Angular y Bootstrap, mejorando drásticamente la UI/UX.",
-                "Desarrollé y mantuve flujos de datos empresariales utilizando Java y Oracle DB (colas y agentes)."
+                "Diseñando microservicios orientados a eventos con NestJS y Kafka para el aprovisionamiento masivo de planes móviles y miles de eventos concurrentes.",
+                "Implementando CassandraDB y PostgreSQL para resolver cuellos de botella de lectura/escritura en flujos de datos asíncronos de alto volumen.",
+                "Liderando la reconstrucción completa de un sistema B2B empresarial usando Angular y Bootstrap, mejorando drásticamente la UI/UX y mantenibilidad."
               ]
             }
           ],
-          tech: ["NestJS", "Angular", "Kafka", "CassandraDB", "Docker", "Java", "Oracle"]
+          tech: ["NestJS", "Kafka", "CassandraDB", "Docker", "Angular", "PostgreSQL"]
         }
       ]
     },
     projects: {
-      title: "Proyectos en los que he trabajado",
+      title: "Proyectos Más Relevantes",
       badgeCareer: "carrera",
       badgePersonal: "personal",
       badgeProject: "Proyecto",
       items: [
         {
-          title: "App Web Local de Banca Digital",
-          description: "Lideré el desarrollo front-end de la aplicación web local para Banco Cuscatlán. Construcción de módulos críticos: pago de servicios, tarjetas de crédito, registro de usuarios y flujos complejos de recuperación de cuentas.",
-          tech: ["Angular 18", "TypeScript", "Tailwind CSS", "RxJS"],
-          type: "career"
-        },
-        {
-          title: "Plataforma de Estudio de Idiomas Cloud-Native",
-          description: "Sistema híbrido distribuido con microservicios Go comunicados vía gRPC. Cuenta con generación dinámica de recursos potenciada por Google Gemini y almacenamiento escalable en AWS S3.",
-          tech: ["Go", "gRPC", "Next.js", "AWS", "Nx", "Gemini AI"],
+          title: "Plataforma de Idiomas Cloud-Native",
+          description: "Sistema híbrido distribuido con microservicios Go comunicados vía gRPC. Incluye generación de recursos potenciada por IA (LLMs) y orquestación monorepo moderna con Nx.",
+          tech: ["Go", "gRPC", "Next.js", "AWS", "Nx", "LLMs", "Vitest"],
           type: "personal"
         },
         {
-          title: "Plataforma Core Matrix",
-          description: "Diseñé la arquitectura y el motor de configuración para Banco Cuscatlán. Modernización de sistemas legacy usando Angular 18 y una estrategia de renderizado de alto rendimiento.",
-          tech: ["Angular 18", "Signals", "Nx", "TypeScript", "SCSS"],
-          github: "https://github.com/smkod",
+          title: "Microservicios de Aprovisionamiento Masivo",
+          description: "Arquitectura orientada a eventos de alta concurrencia con NestJS y Kafka. Procesamiento de aprovisionamiento masivo con CassandraDB para operaciones de ultra baja latencia en TIGO.",
+          tech: ["NestJS", "Kafka", "CassandraDB", "Docker", "PostgreSQL"],
           type: "career"
         },
         {
-          title: "Microservicios de Aprovisionamiento Masivo",
-          description: "Arquitectura orientada a eventos de alta concurrencia con NestJS y Kafka. Procesamiento masivo de aprovisionamiento de planes móviles con CassandraDB para operaciones de ultra baja latencia.",
-          tech: ["NestJS", "Kafka", "CassandraDB", "Docker", "PostgreSQL"],
-          github: "https://github.com/smkod",
+          title: "Plataforma Core Matrix",
+          description: "Diseñé la infraestructura digital regional y el motor de configuración para Banco Cuscatlán. Modernización de sistemas legacy usando Angular 18, Signals y Nx.",
+          tech: ["Angular 18", "Signals", "Nx", "TypeScript", "Tailwind"],
+          type: "career"
+        },
+        {
+          title: "App Web de Banca Digital",
+          description: "Lideré el desarrollo frontend de la aplicación web principal de Banco Cuscatlán. Módulos críticos de pago y registro bajo estándares modernos de Angular.",
+          tech: ["Angular 18", "RxJS", "Tailwind CSS", "Jest"],
           type: "career"
         },
         {
           title: "Orquestador de Archivos Empresarial",
-          description: "Servicio de orquestación de archivos distribuido para TIGO Honduras. Maneja flujos de datos asíncronos complejos y procesamiento masivo a través de entornos dockerizados.",
+          description: "Servicio de orquestación de archivos distribuido para TIGO. Maneja flujos asíncronos complejos y procesamiento masivo en entornos dockerizados.",
           tech: ["Node.js", "Microservices", "Docker", "Jest"],
-          github: "https://github.com/smkod",
-          type: "career"
-        },
-        {
-          title: "Sistema de Gestión UNOCELL",
-          description: "Sistema full-stack para control de inventario y reparaciones. Incluye roles de acceso y contabilidad básica integrada para comercios medianos.",
-          tech: ["Node.js", "MySQL", "Bootstrap", "Hostinger"],
-          github: "https://github.com/smkod",
           type: "career"
         }
       ]
@@ -287,16 +279,17 @@ export const translations = {
       greeting: "Olá, meu nome é",
       name: "Samuel Casco.",
       subtitle: "Eu projeto sistemas distribuídos escaláveis.",
-      description: "Engenheiro de Software Sênior com mais de 4 anos de experiência especializado em <span class=\"text-text-main font-semibold\">TypeScript, Go e Arquiteturas Cloud</span>. Lidero equipes de engenharia, projeto microsserviços de alta concorrência e construo infraestruturas digitais robustas do banco de dados à interface do usuário.",
+      description: "Engenheiro de Software com mais de 4 anos de experiência navegando em ambientes complexos. Construo <span class=\"text-text-main font-semibold\">microsserviços de alta concorrência (Node/Go)</span> e orquestro <span class=\"text-text-main font-semibold\">arquiteturas front-end robustas (Angular/Next.js)</span> para setores onde escalabilidade e segurança são inegociáveis.",
       cta: "Veja meu trabalho!",
-      resume: "Baixar Currículo"
+      resume: "Baixar Currículo",
+      resumeLink: "/resumes/Samuel-Casco-Resume-PT.pdf"
     },
     skills: {
       title: "Sobre Mim & Habilidades",
-      p1: "Sou um <span class=\"text-accent font-semibold\">Engenheiro de Software Sênior</span> estratégico com mais de 4 anos de experiência entregando aplicações web de ponta a ponta e sistemas distribuídos em larga escala.",
-      p2: "Conecto arquiteturas front-end modernas como <span class=\"text-text-main\">Angular e Next.js</span> com sistemas back-end distribuídos robustos usando <span class=\"text-text-main\">NestJS, Go e Kafka</span>. Tenho profunda paixão por modernização arquitetônica, Platform Engineering e excelência em CI/CD.",
-      p3: "Além de escrever código, minha força está na <strong>liderança técnica e arquitetura escalável</strong>. Sou profundamente apaixonado por ensinar aos outros e aprender continuamente com meus colegas. Destaco-me por assumir a responsabilidade por problemas complexos, orientar desenvolvedores e negociar dívida técnica para garantir entregas sustentáveis.",
-      p4: "Atualmente, lidero equipes de engenharia no <span class=\"text-accent font-semibold\">Banco Cuscatlán</span>, projetando a próxima geração da infraestrutura bancária digital regional. Anteriormente, desenvolvi microsserviços massivos de provisionamento baseados em eventos na TIGO.",
+      p1: "Sou um <span class=\"text-accent font-semibold\">Engenheiro de Software</span> estratégico com mais de 4 anos de experiência entregando aplicações web e sistemas distribuídos em larga escala nos setores FinTech e Telecom.",
+      p2: "Conecto a lógica de negócio complexa com uma execução técnica robusta. Meu foco são os <strong>fundamentos do software</strong> acima dos frameworks da moda, garantindo sistemas resilientes e eficientes por meio de arquitetura limpa e padrões de qualidade automatizados.",
+      p3: "Além do código, minha força está na <strong>liderança técnica e evolução arquitetônica</strong>. Destaco-me por assumir a responsabilidade por migrações complexas, orientar equipes por meio de documentação e pair programming, e construir sistemas que facilitam o trabalho de outros desenvolvedores.",
+      p4: "Atualmente, como <span class=\"text-accent font-semibold\">Consultor Independente de Software</span>, foco em sistemas distribuídos, Go e AWS. Anteriormente, liderei equipes no Banco Cuscatlán e construí microsserviços massivos na TIGO.",
       categories: {
         frontend: "Frontend",
         backend: "Backend",
@@ -308,25 +301,39 @@ export const translations = {
       title: "Onde Trabalhei",
       jobs: [
         {
+          company: "Consultor Independente",
+          roles: [
+            {
+              title: "Consultor de Engenharia de Software",
+              date: "Jan 2026 - Atualidade",
+              description: [
+                "Impulsionando iniciativas técnicas focadas em arquiteturas de alto desempenho e soluções cloud-native usando Go e AWS.",
+                "Projetando microsserviços especializados e contratos gRPC para comunicações de baixa latência.",
+                "Implementando entregas web modernas com Next.js e orquestrando fluxos de monorepo complexos com Nx."
+              ]
+            }
+          ],
+          tech: ["Go (Golang)", "gRPC", "AWS", "Next.js", "Nx", "LLMs", "PostgreSQL"]
+        },
+        {
           company: "Banco Cuscatlán",
           roles: [
             {
-              title: "Líder da Equipe Front-End",
+              title: "Senior Front-End Lead",
               date: "Maio 2025 - Jan 2026",
               description: [
-                "Dirigindo uma equipe de 4 engenheiros para a aplicação web local e 1 desenvolvedor para a plataforma central 'Matrix'.",
-                "Capacitando e orientando desenvolvedores, analistas de QA e estagiários em testes unitários, Git e fluxos de automação.",
-                "Supervisionando decisões arquitetônicas, revisões de código e compartilhamento de conhecimento com a divisão de El Salvador."
+                "Dirigindo uma equipe de 4 engenheiros, fornecendo liderança técnica e mentoria para mais de 10 colaboradores em GitFlow e testes unitários.",
+                "Orquestrando a migração da plataforma core do Angular 16 para 18, implementando Signals e Deferrable Views para maximizar o desempenho.",
+                "Estabelecendo padrões de qualidade CI/CD configurando Husky e SonarQube para validação automatizada de Pull Requests."
               ]
             },
             {
-              title: "Engenheiro de Software Sênior",
-              date: "Ago 2024 - Abril 2025",
+              title: "Senior Front-End Developer",
+              date: "Ago 2024 - Maio 2025",
               description: [
-                "Projetei a plataforma central 'Matrix', modernizando a infraestrutura digital regional do zero.",
-                "Orquestrei a migração para o Angular 18, implementando Signals e Deferrable Views para maximizar o desempenho.",
-                "Estabeleci padrões de qualidade de CI/CD usando Husky e SonarQube, aplicando validação estrita de PRs e cobertura de testes de 70%+.",
-                "Construí módulos críticos de IU: widgets iniciais, pagamentos de serviços, cartões de crédito e fluxos complexos de recuperação de contas."
+                "Projetando a modernização da infraestrutura digital regional 'Matrix', movendo sistemas legados para uma arquitetura Angular de alto desempenho.",
+                "Construindo módulos bancários de alta complexidade para fluxos de cartões de crédito, pagamento de serviços e recuperação segura de contas.",
+                "Reduzindo a dívida técnica via princípios SOLID e estabelecendo padrões arquitetônicos independentes de framework."
               ]
             }
           ],
@@ -336,72 +343,53 @@ export const translations = {
           company: "TIGO Honduras",
           roles: [
             {
-              title: "Desenvolvedor Backend & Microsserviços",
-              date: "Jan 2023 - Ago 2024",
+              title: "Engenheiro de Software Full-Stack",
+              date: "Ago 2022 - Ago 2024",
               description: [
-                "Projetei e desenvolvi microsserviços altamente concorrentes usando NestJS e Kafka para provisionamento massivo de planos móveis.",
-                "Implementei CassandraDB para suportar imensos volumes de leitura/gravação sem gargalos, em conjunto com PostgreSQL.",
-                "Introduzi inspeção proativa de código via SonarQube e estabeleci uma forte cultura de testes unitários com Jest.",
-                "Containerizei microsserviços usando Docker e orquestrei implantações em redes internas seguras."
-              ]
-            },
-            {
-              title: "Engenheiro de Software Full-Stack (Outsourcing)",
-              date: "Mar 2022 - Jan 2023",
-              description: [
-                "Reconstruí e modernizei um sistema legado completo usando Angular e Bootstrap, melhorando drasticamente a IU/UX.",
-                "Desenvolvi e mantive fluxos de dados corporativos usando Java e Oracle DB (filas e agentes)."
+                "Projetando microsserviços orientados a eventos com NestJS e Kafka para o provisionamento massivo de planos móveis e milhares de eventos simultâneos.",
+                "Implementando CassandraDB e PostgreSQL para resolver gargalos de leitura/gravação em fluxos de dados assíncronos de alto volume.",
+                "Liderando a reconstrução completa de um sistema B2B empresarial usando Angular e Bootstrap, melhorando drasticamente a UI/UX e manutenibilidade."
               ]
             }
           ],
-          tech: ["NestJS", "Angular", "Kafka", "CassandraDB", "Docker", "Java", "Oracle"]
+          tech: ["NestJS", "Kafka", "CassandraDB", "Docker", "Angular", "PostgreSQL"]
         }
       ]
     },
     projects: {
-      title: "Projetos nos quais trabalhei",
+      title: "Projetos Mais Relevantes",
       badgeCareer: "carreira",
       badgePersonal: "pessoal",
       badgeProject: "Projeto",
       items: [
         {
-          title: "App Web Local de Banco Digital",
-          description: "Liderei o desenvolvimento front-end do aplicativo web local para o Banco Cuscatlán. Construí módulos críticos, incluindo pagamentos de serviços, cartões de crédito, registro de usuários e fluxos complexos de recuperação de contas.",
-          tech: ["Angular 18", "TypeScript", "Tailwind CSS", "RxJS"],
-          type: "career"
-        },
-        {
-          title: "Plataforma Cloud-Native de Ensino de Idiomas",
-          description: "Sistema híbrido distribuído com microsserviços Go via gRPC. Apresenta geração dinâmica de recursos com tecnologia Google Gemini e armazenamento escalonável na AWS S3.",
-          tech: ["Go", "gRPC", "Next.js", "AWS", "Nx", "Gemini AI"],
+          title: "Plataforma de Idiomas Cloud-Native",
+          description: "Sistema híbrido distribuído com microsserviços Go via gRPC. Apresenta geração de recursos baseada em IA (LLMs) e orquestração monorepo moderna com Nx.",
+          tech: ["Go", "gRPC", "Next.js", "AWS", "Nx", "LLMs", "Vitest"],
           type: "personal"
         },
         {
-          title: "Plataforma Central Matrix",
-          description: "Projetei a infraestrutura digital regional e o mecanismo de configuração para o Banco Cuscatlán. Modernização de sistemas legados usando Angular 18 e renderização de alto desempenho.",
-          tech: ["Angular 18", "Signals", "Nx", "TypeScript", "SCSS"],
-          github: "https://github.com/smkod",
+          title: "Microsserviços de Provisionamento Massivo",
+          description: "Arquitetura orientada a eventos de alta concorrência usando NestJS e Kafka. Processamento de provisionamento em massa com CassandraDB para operações de dados de latência ultrabaixa na TIGO.",
+          tech: ["NestJS", "Kafka", "CassandraDB", "Docker", "PostgreSQL"],
           type: "career"
         },
         {
-          title: "Microsserviços de Provisionamento Massivo",
-          description: "Arquitetura orientada a eventos de alta concorrência usando NestJS e Kafka. Processamento de provisionamento de planos com CassandraDB para operações de dados de latência ultrabaixa.",
-          tech: ["NestJS", "Kafka", "CassandraDB", "Docker", "PostgreSQL"],
-          github: "https://github.com/smkod",
+          title: "Plataforma Central Matrix",
+          description: "Projetei a infraestrutura digital regional e o mecanismo de configuração para o Banco Cuscatlán. Modernização de sistemas legados usando Angular 18, Signals e Nx.",
+          tech: ["Angular 18", "Signals", "Nx", "TypeScript", "Tailwind"],
+          type: "career"
+        },
+        {
+          title: "App Web de Banco Digital",
+          description: "Liderei o desenvolvimento frontend da aplicação web principal do Banco Cuscatlán. Módulos críticos de pagamento e registro sob padrões modernos do Angular.",
+          tech: ["Angular 18", "RxJS", "Tailwind CSS", "Jest"],
           type: "career"
         },
         {
           title: "Orquestrador de Arquivos Corporativo",
-          description: "Serviço de orquestração de arquivos distribuído para a TIGO. Lida com fluxos de dados assíncronos complexos e processamento massivo de arquivos em ambientes de contêineres.",
+          description: "Serviço de orquestração de arquivos distribuído para a TIGO. Lida con fluxos assíncronos complexos e processamento massivo em ambientes conteinerizados.",
           tech: ["Node.js", "Microservices", "Docker", "Jest"],
-          github: "https://github.com/smkod",
-          type: "career"
-        },
-        {
-          title: "Sistema de Gestão UNOCELL",
-          description: "Sistema full-stack para controle de estoque e reparos. Apresenta controle de acesso baseado em funções e contabilidade básica para empresas de varejo.",
-          tech: ["Node.js", "MySQL", "Bootstrap", "Hostinger"],
-          github: "https://github.com/smkod",
           type: "career"
         }
       ]

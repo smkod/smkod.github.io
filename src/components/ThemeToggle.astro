@@ -2,14 +2,20 @@
 import { Sun, Moon } from 'lucide-astro';
 ---
 
-<button id="theme-toggle" class="p-2 text-text-muted hover:text-accent transition-colors flex items-center justify-center" aria-label="Toggle dark mode">
-  <span class="hidden dark:block">
-    <Sun size={20} />
-  </span>
-  <span class="block dark:hidden">
-    <Moon size={20} />
-  </span>
-</button>
+<div class="relative group">
+  <button id="theme-toggle" class="p-2 text-text-muted hover:text-accent transition-colors flex items-center justify-center" aria-label="Toggle dark mode">
+    <span class="hidden dark:block">
+      <Sun size={20} />
+    </span>
+    <span class="block dark:hidden">
+      <Moon size={20} />
+    </span>
+  </button>
+  <div class="absolute top-10 left-1/2 -translate-x-1/2 px-2 py-1 bg-bg-light text-text-main text-xs rounded opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 group-hover:delay-[1000ms] whitespace-nowrap border border-black/10 dark:border-white/10 shadow-lg z-[60]">
+    <span class="dark:hidden">Dark Mode</span>
+    <span class="hidden dark:inline">Light Mode</span>
+  </div>
+</div>
 
 <script>
   const themeToggleBtn = document.getElementById('theme-toggle');

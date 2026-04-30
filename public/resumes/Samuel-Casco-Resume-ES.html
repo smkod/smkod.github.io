@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Casco - Ingeniero de Software | Sistemas Distribuidos y Full-Stack</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #3b82f6;
+            --text: #334155;
+            --light-text: #64748b;
+            --border: #e2e8f0;
+            --bg-soft: #f8fafc;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            line-height: 1.42;
+            color: var(--text);
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 0.3in 0.5in;
+            -webkit-font-smoothing: antialiased;
+            background-color: white;
+        }
+
+        .hl { font-weight: 600; color: var(--primary); }
+        
+        header { text-align: center; margin-bottom: 10px; }
+        h1 { 
+            font-family: 'Manrope', sans-serif;
+            font-size: 26px; 
+            color: var(--primary); 
+            margin-bottom: 2px;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+            text-transform: none;
+        }
+        .subtitle { 
+            font-weight: 600; 
+            font-size: 13px; 
+            color: var(--accent); 
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
+            margin-bottom: 8px; 
+        }
+        
+        .contact { 
+            font-size: 10px; 
+            color: var(--light-text); 
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 8px;
+        }
+        .contact span { display: flex; align-items: center; gap: 4px; }
+        .contact a { color: var(--text); text-decoration: none; font-weight: 500; }
+        
+        .summary { 
+            font-size: 11.5px; 
+            margin-bottom: 12px; 
+            text-align: justify; 
+            background-color: var(--bg-soft);
+            padding: 10px 14px;
+            border-radius: 6px;
+            border-left: 4px solid var(--accent);
+        }
+        
+        h2 { 
+            display: flex;
+            align-items: center;
+            text-transform: uppercase; 
+            font-size: 11px; 
+            margin-top: 8px; 
+            margin-bottom: 8px; 
+            color: var(--primary); 
+            letter-spacing: 1.5px; 
+            font-weight: 700; 
+        }
+        h2::after {
+            content: "";
+            flex: 1;
+            border-bottom: 1px solid var(--border);
+            margin-left: 10px;
+        }
+        
+        .job-item { margin-bottom: 12px; }
+        .job-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 3px; }
+        h3 { font-size: 12px; color: var(--primary); font-weight: 700; }
+        .job-date { font-weight: 600; font-size: 9.5px; color: var(--light-text); text-transform: uppercase; }
+        
+        ul { margin: 2px 0 4px 18px; }
+        li { font-size: 11.5px; margin-bottom: 3px; line-height: 1.4; }
+        li::marker { color: var(--accent); }
+        
+        .skills-grid { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 16px; 
+            font-size: 11.5px; 
+            margin-top: 6px; 
+        }
+        .skills-grid p { margin-bottom: 4px; line-height: 1.42; }
+        .skills-grid strong { color: var(--primary); font-weight: 700; display: block; margin-bottom: 2px; text-transform: uppercase; font-size: 9.5px; letter-spacing: 0.5px; }
+        
+        .edu-lang { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 16px; 
+            margin-top: 0px; 
+        }
+        .edu-item, .lang-item { font-size: 11.5px; }
+        .edu-item strong { font-size: 12px; color: var(--primary); }
+        .lang-item p { color: var(--text); }
+
+        @media print {
+            body { padding: 0.3in 0.5in; }
+            @page { size: letter; margin: 0; }
+            .summary { background-color: #f1f5f9 !important; -webkit-print-color-adjust: exact; }
+            h2::after { border-bottom: 1px solid #e2e8f0 !important; -webkit-print-color-adjust: exact; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Samuel Casco</h1>
+        <p class="subtitle">Ingeniero de Software | Sistemas Distribuidos y Full-Stack</p>
+        <div class="contact">
+            <span>
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Tegucigalpa, Honduras
+            </span>
+            <span>
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <a href="mailto:sacasco99@gmail.com">sacasco99@gmail.com</a>
+            </span><br>
+            <span>
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                <a href="https://linkedin.com/in/samuelcasco">linkedin.com/samuelcasco</a>
+            </span> | 
+            <span>
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <a href="https://github.com/smkod">github.com/smkod</a>
+            </span>
+        </div>
+    </header>
+
+    <div class="summary">
+        <span class="hl">Ingeniero de Software</span> versátil con más de 4 años de experiencia entregando soluciones de alto impacto en Fintech y Telecomunicaciones. Experto en el <span class="hl">ecosistema TypeScript (Node.js, NestJS, Angular, React)</span> y actualmente diseñando sistemas distribuidos con <span class="hl">Go y AWS</span>. Trayectoria probada liderando migraciones técnicas, modernizando infraestructuras legacy y construyendo microservicios escalables orientados a eventos. Conecto lógica de negocio compleja con una ejecución técnica robusta.
+    </div>
+
+    <h2>Experiencia Profesional</h2>
+
+    <div class="job-item">
+        <div class="job-header">
+            <h3>Consultor Independiente de Software</h3>
+            <span class="job-date">Ene 2026 — Actualidad</span>
+        </div>
+        <ul>
+            <li>Diseñando microservicios especializados en <span class="hl">Go (Golang)</span> y definiendo contratos <span class="hl">gRPC</span> para comunicaciones de alto rendimiento y baja latencia.</li>
+            <li>Implementando entregas web modernas con <span class="hl">Next.js</span> y orquestando flujos de trabajo en monorepos complejos utilizando <span class="hl">Nx</span>.</li>
+            <li>Diseñando funcionalidades basadas en datos integradas con <span class="hl">PostgreSQL</span> y generación de recursos mediante <span class="hl">Modelos de Lenguaje Extensos (LLMs)</span>.</li>
+            <li>Gestionando despliegues en la nube y automatización de infraestructura utilizando servicios nativos de <span class="hl">AWS y Docker</span>.</li>
+        </ul>
+    </div>
+
+    <div class="job-item">
+        <div class="job-header">
+            <h3>Senior Front-End Lead | Banco Cuscatlán</h3>
+            <span class="job-date">May 2025 — Ene 2026</span>
+        </div>
+        <ul>
+            <li>Dirigí un equipo multidisciplinar de 4 ingenieros, brindando liderazgo técnico y mentoría a más de 10 colaboradores en <span class="hl">GitFlow</span>, automatización y pruebas unitarias.</li>
+            <li>Orquesté la migración de la plataforma core de Angular 16 a 18, implementando <span class="hl">Signals</span> y <span class="hl">Deferrable Views</span> para maximizar el rendimiento de renderizado.</li>
+            <li>Establecí estándares estrictos de calidad y pipelines de CI/CD configurando <span class="hl">Husky y SonarQube</span> para la validación automatizada de PRs.</li>
+            <li>Colaboré con stakeholders de producto para traducir requisitos complejos de banca en hojas de ruta técnicas escalables.</li>
+        </ul>
+    </div>
+
+    <div class="job-item">
+        <div class="job-header">
+            <h3>Senior Front-End Developer | Banco Cuscatlán</h3>
+            <span class="job-date">Ago 2024 — May 2025</span>
+        </div>
+        <ul>
+            <li>Diseñé la arquitectura de la infraestructura digital regional <span class="hl">"Matrix"</span>, modernizando sistemas legacy mediante Angular 18 y estrategias de renderizado de alto rendimiento.</li>
+            <li>Construí módulos bancarios de alta complejidad para flujos de tarjetas de crédito, pago de servicios y procesos de recuperación segura de cuentas.</li>
+            <li>Reduje la deuda técnica mediante principios <span class="hl">SOLID</span> y establecí patrones arquitectónicos independientes del framework.</li>
+            <li>Aseguré la consistencia visual regional implementando y manteniendo sistemas de diseño escalables con <span class="hl">Tailwind CSS</span>.</li>
+        </ul>
+    </div>
+
+    <div class="job-item">
+        <div class="job-header">
+            <h3>Full-Stack Software Engineer | TIGO Honduras (vía BaaS Tech)</h3>
+            <span class="job-date">Ago 2022 — Ago 2024</span>
+        </div>
+        <ul>
+            <li>Diseñé microservicios orientados a eventos utilizando <span class="hl">NestJS y Kafka</span> para el aprovisionamiento masivo de planes móviles.</li>
+            <li>Implementé <span class="hl">CassandraDB</span> para soportar volúmenes inmensos de lectura/escritura y <span class="hl">PostgreSQL</span> para la integridad de datos relacionales.</li>
+            <li>Contribuí en la reconstrucción de un sistema B2B empresarial usando <span class="hl">Angular</span>, mejorando drásticamente la UI/UX y la mantenibilidad a largo plazo.</li>
+            <li>Fomenté una cultura de pruebas y linting automatizado (<span class="hl">Jest, ESLint</span>), asegurando entregas de grado de producción en sistemas distribuidos.</li>
+        </ul>
+    </div>
+
+    <h2>Habilidades Técnicas</h2>
+    <div class="skills-grid">
+        <div>
+            <strong>Backend</strong>
+            <p>Node.js, NestJS, Go (Golang), Microservicios, gRPC, Kafka, REST APIs.</p>
+            <strong>Bases de Datos</strong>
+            <p>PostgreSQL, CassandraDB, MongoDB, MySQL.</p>
+        </div>
+        <div>
+            <strong>Frontend</strong>
+            <p>Angular (Signals/RxJS), React, Next.js, TypeScript, Tailwind CSS.</p>
+            <strong>Cloud y DevOps</strong>
+            <p>AWS (ECS, S3), Docker, Nx Monorepo, GitHub Actions, SonarQube.</p>
+        </div>
+    </div>
+
+    <div class="edu-lang">
+        <div class="edu-item">
+            <h2>Educación</h2>
+            <strong>UNAH</strong> - Lic. en Informática Administrativa / IT | 2023
+        </div>
+        <div class="lang-item">
+            <h2>Idiomas</h2>
+            <p><span class="hl">Español:</span> Nativo | <span class="hl">Inglés:</span> Fluido (B2+) | <span class="hl">Portugués:</span> B1</p>
+        </div>
+    </div>
+
+</body>
+</html>

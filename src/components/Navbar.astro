@@ -16,7 +16,7 @@ const { dict, currentLang } = Astro.props;
       <a href="#about" class="hover:text-accent transition-colors text-text-muted">{dict.about}</a>
       <a href="#experience" class="hover:text-accent transition-colors text-text-muted">{dict.experience}</a>
       <a href="#projects" class="hover:text-accent transition-colors text-text-muted">{dict.projects}</a>
-      <a href="https://dev.to/smkod" target="_blank" class="hover:text-accent transition-colors text-text-muted">{dict.articles}</a>
+      {/* <a href="https://dev.to/smkod" target="_blank" class="hover:text-accent transition-colors text-text-muted">{dict.articles}</a> */}
       <a href="#contact" class="hover:text-accent transition-colors text-text-muted">{dict.contact}</a>
     </div>
 
@@ -24,12 +24,22 @@ const { dict, currentLang } = Astro.props;
       <ThemeToggle />
       <LanguagePicker currentLang={currentLang} />
       <div class="hidden md:flex items-center gap-4 border-l border-black/10 dark:border-white/10 pl-4">
-        <a href="https://github.com/smkod" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors">
-          <Github size={20} />
-        </a>
-        <a href="https://linkedin.com/in/samuelcasco" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors">
-          <Linkedin size={20} />
-        </a>
+        <div class="relative group">
+          <a href="https://github.com/smkod" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors block">
+            <Github size={20} />
+          </a>
+          <div class="absolute top-10 left-1/2 -translate-x-1/2 px-2 py-1 bg-bg-light text-text-main text-xs rounded opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 group-hover:delay-[1000ms] whitespace-nowrap border border-black/10 dark:border-white/10 shadow-lg">
+            GitHub
+          </div>
+        </div>
+        <div class="relative group">
+          <a href="https://linkedin.com/in/samuelcasco" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors block">
+            <Linkedin size={20} />
+          </a>
+          <div class="absolute top-10 left-1/2 -translate-x-1/2 px-2 py-1 bg-bg-light text-text-main text-xs rounded opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 group-hover:delay-[1000ms] whitespace-nowrap border border-black/10 dark:border-white/10 shadow-lg">
+            LinkedIn
+          </div>
+        </div>
       </div>
       
       <!-- Hamburger Button (Mobile Only) -->
@@ -55,14 +65,14 @@ const { dict, currentLang } = Astro.props;
       <span class="text-accent text-sm font-mono opacity-50 group-hover:opacity-100">02.</span>
       {dict.experience}
     </a>
-    <a href="#projects" class="mobile-link group flex items-center gap-4 text-text-main hover:text-accent transition-all duration-300">
+      <a href="#projects" class="mobile-link group flex items-center gap-4 text-text-main hover:text-accent transition-all duration-300">
       <span class="text-accent text-sm font-mono opacity-50 group-hover:opacity-100">03.</span>
       {dict.projects}
     </a>
-    <a href="https://dev.to/smkod" target="_blank" class="mobile-link group flex items-center gap-4 text-text-main hover:text-accent transition-all duration-300">
+    {/* <a href="https://dev.to/smkod" target="_blank" class="mobile-link group flex items-center gap-4 text-text-main hover:text-accent transition-all duration-300">
       <span class="text-accent text-sm font-mono opacity-50 group-hover:opacity-100">04.</span>
       {dict.articles}
-    </a>
+    </a> */}
     <a href="#contact" class="mobile-link group flex items-center gap-4 text-text-main hover:text-accent transition-all duration-300">
       <span class="text-accent text-sm font-mono opacity-50 group-hover:opacity-100">05.</span>
       {dict.contact}
