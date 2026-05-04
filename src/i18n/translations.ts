@@ -119,9 +119,9 @@ export const translations = {
           type: "career"
         },
         {
-          title: "Enterprise File Orchestrator",
-          description: "Distributed file orchestration service for TIGO. Handles complex asynchronous data flows and massive file processing across containerized environments.",
-          tech: ["Node.js", "Microservices", "Docker", "Jest"],
+          title: "Enterprise B2B Admin Application",
+          description: "Admin application built to manage telecom products and configurations for the B2B sector at TIGO.",
+          tech: ["Angular", "Node.js", "Java", "Microservices"],
           type: "career"
         }
       ]
@@ -253,9 +253,9 @@ export const translations = {
           type: "career"
         },
         {
-          title: "Orquestador de Archivos Empresarial",
-          description: "Servicio de orquestación de archivos distribuido para TIGO. Maneja flujos asíncronos complejos y procesamiento masivo en entornos dockerizados.",
-          tech: ["Node.js", "Microservices", "Docker", "Jest"],
+          title: "Aplicación Admin B2B Empresarial",
+          description: "Aplicación administrativa construida para gestionar productos de telecomunicaciones y configuraciones para el sector B2B en TIGO.",
+          tech: ["Angular", "Node.js", "Java", "Microservices"],
           type: "career"
         }
       ]
@@ -387,9 +387,9 @@ export const translations = {
           type: "career"
         },
         {
-          title: "Orquestrador de Arquivos Corporativo",
-          description: "Serviço de orquestração de arquivos distribuído para a TIGO. Lida con fluxos assíncronos complexos e processamento massivo em ambientes conteinerizados.",
-          tech: ["Node.js", "Microservices", "Docker", "Jest"],
+          title: "Aplicação Admin B2B Corporativa",
+          description: "Aplicação administrativa construída para gerenciar produtos de telecomunicações e configurações para o setor B2B na TIGO.",
+          tech: ["Angular", "Node.js", "Java", "Microservices"],
           type: "career"
         }
       ]
